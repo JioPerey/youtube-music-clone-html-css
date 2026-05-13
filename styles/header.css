@@ -1,0 +1,66 @@
+header {
+  position: fixed;
+  height: 64px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 124px 0 24px;
+}
+
+header .left-section {
+  display: flex;
+  align-items: center;
+}
+
+header .left-section .search-button {
+  background-color: transparent;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 8px;
+  border-radius: 6px;
+  border-right: none;
+}
+
+header .left-section .search-field {
+  background-color: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+header .right-section {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+header .right-section .cast-button .cast-icon {
+  vertical-align: top;
+  height: 26px;
+  cursor: pointer;
+}
+
+header .right-section .current-user-profile-container {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+
+header .right-section .current-user-profile-container img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 16px;
+}
+
+
