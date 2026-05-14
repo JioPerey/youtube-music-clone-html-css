@@ -25,6 +25,7 @@ main .quick-picks-section .quick-picks-heading .left-section .current-user-profi
 main .quick-picks-section .quick-picks-heading .left-section .heading-title {
   cursor: pointer;
   transition: all 0.15s;
+  white-space: nowrap;
 }
 
 main .quick-picks-section .quick-picks-heading .left-section .heading-title:hover {
@@ -52,4 +53,146 @@ main .quick-picks-section .quick-picks-heading .right-section button {
 
 main .quick-picks-section .quick-picks-heading .right-section button:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.video-cards-container {
+  display: grid;
+  grid-template-rows: 48px 48px 48px 48px;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  grid-auto-columns: 374px;
+  column-gap: 24px;
+  row-gap: 16px;
+  padding: 16px 10px;
+}
+
+.video-cards-container::-webkit-scrollbar {
+  display: none;
+}
+
+.video-cards-container {
+  scrollbar-width: none;
+}
+
+.video-cards-container .video-card {
+  max-width: 374px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+}
+
+.video-cards-container .video-card .video-image {
+  width: 48px;
+  position: relative;
+}
+
+.video-cards-container .video-card .video-image img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 6px;
+}
+
+.video-cards-container .video-card .video-image .video-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.15s;
+  pointer-events: none;
+}
+
+.video-cards-container .video-card .video-image .video-image-overlay img {
+  width: 34px;
+  height: 34px;
+}
+
+.video-cards-container .video-card .video-details {
+  flex: 1;     
+  min-width: 0;
+  transition: all 0.15s;
+}
+
+.video-cards-container .video-card:hover .video-details {
+  padding-right: 110px; 
+}
+
+.video-cards-container .video-card .video-details .video-title {
+  font-weight: 500;
+  margin-bottom: 4px;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.video-cards-container .video-card .video-details .video-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.video-cards-container .video-card .video-details .video-stats {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.video-cards-container .video-card .video-details .video-stats a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.15s;
+}
+
+.video-cards-container .video-card .video-details .video-stats a:hover {
+  text-decoration: underline;
+}
+
+.video-cards-container .video-card .action-buttons {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #030303;
+  padding-left: 12px;
+  opacity: 0;
+  transition: all 0.15s;
+  pointer-events: none; 
+}
+
+.video-cards-container .video-card:hover .action-buttons {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.video-cards-container .video-card .action-buttons button {
+  background-color: transparent;
+  border: none;
+  padding: 6px 6px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.video-cards-container .video-card .action-buttons button img {
+  vertical-align: middle;
+}
+
+.video-cards-container .video-card .action-buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.video-cards-container .video-card:hover .video-image .video-image-overlay {
+  opacity: 1;
 }

@@ -13,6 +13,10 @@ main .chips-section .chip {
   transition: all 0.15s;
 }
 
+main .chips-section .chip p {
+  white-space: nowrap;
+}
+
 main .chips-section .chip:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
