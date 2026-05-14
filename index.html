@@ -9,25 +9,108 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/chips-section.css">
+    <link rel="stylesheet" href="styles/quick-picks-section.css">
   </head>
   <body>
     <header>
-      <div class="left-section">
-        <img class="hamburger-menu" src="icons/hambuger-menu-icon.svg" alt="hamburger menu">
-        <img src="icons/youtube-music-logo.svg" alt="youtube music logo">
-        <div class="search-button">
-          <img src="icons/search-icon.svg" alt="search icon">
-          <input class="search-field" type="text" placeholder="Search songs, albums, artists, podcasts">
+      <section class="left-section">
+        <div class="hamburger-menu-container">
+          <img class="hamburger-menu" src="icons/hambuger-menu-icon.svg" alt="hamburger menu">
         </div>
-      </div>
-      <div class="right-section">
+        <a href="index.html">
+          <img class="youtube-music-logo" src="icons/youtube-music-logo.svg" alt="youtube music logo">
+        </a>
+        <div class="search-container">
+          <img class="search-icon" src="icons/search-icon.svg" alt="search icon">
+          <input class="search-input" type="text" placeholder="Search songs, albums, artists, podcasts">
+        </div>
+      </section>
+      <section class="right-section">
         <div class="cast-button">
           <img class="cast-icon" src="icons/cast-icon.svg" alt="cast icon">
         </div>
         <div class="current-user-profile-container">
           <img  class="current-user-profile" src="channel-pictures/my-channel.jpg" alt="current user channel">
         </div>
-      </div>
+      </section>
     </header>
+    
+    <nav>
+      <div class="nav-link">
+        <img class="home-icon" src="icons/home-icon.svg" alt="home icon">
+        <p>Home</p>
+      </div>
+      <div class="nav-link">
+        <img class="explore-icon" src="icons/explore-icon.svg" alt="explore icon">
+        <p>Explore</p>
+      </div>
+      <div class="nav-link">
+        <img class="library-icon" src="icons/library-icon.svg" alt="library icon">
+        <p>Library</p>
+      </div>
+      <div class="nav-link">
+        <img class="youtube-music-icon" src="icons/youtube-music.svg" alt="youtube music icon">
+        <p>Upgrade</p>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Chips Section -->
+      <section class="chips-section">
+        <div class="chip">
+          <p>Energize</p>
+        </div>
+        <div class="chip">
+          <p>Relax</p>
+        </div>
+        <div class="chip">
+          <p>Feel good</p>
+        </div>
+        <div class="chip">
+          <p>Commute</p>
+        </div>
+        <div class="chip">
+          <p>Workout</p>
+        </div>
+        <div class="chip">
+          <p>Party</p>
+        </div>
+        <div class="chip">
+          <p>Focus</p>
+        </div>
+        <div class="chip">
+          <p>Sad</p>
+        </div>
+        <div class="chip">
+          <p>Romance</p>
+        </div>
+        <div class="chip">
+          <p>Sleep</p>
+        </div>
+      </section>
+
+      <!-- Quick Picks Section -->
+      <section class="quick-picks-section">
+        <div class="quick-picks-heading">
+          <div class="left-section">
+            <div class="current-user-profile-container">
+              <img src="channel-pictures/my-channel.jpg" alt="current user profile">
+            </div>
+            <h1 class="heading-title">Quick picks</h1>
+          </div>
+          <div class="right-section">
+            <button class="previous-button">
+              <img src="icons/previous-icon.svg" alt="previous icon">
+            </button>
+            <button class="next-button">
+              <img src="icons/next-icon.svg" alt="next icon">
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
   </body>
 </html>
