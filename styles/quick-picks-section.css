@@ -1,20 +1,25 @@
-main .quick-picks-section .quick-picks-heading {
+main .quick-picks-section {
+  margin-bottom: 46px;
+}
+
+main .quick-picks-section .section-heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-main .quick-picks-section .quick-picks-heading .left-section {
+main .quick-picks-section .section-heading .left-section {
   display: flex;
+  flex: 1;
   align-items: center;
   gap: 16px;
 }
 
-main .quick-picks-section .quick-picks-heading .left-section .current-user-profile-container {
+main .quick-picks-section .section-heading .left-section .current-user-profile-container {
   width: 56px;
 }
 
-main .quick-picks-section .quick-picks-heading .left-section .current-user-profile-container img {
+main .quick-picks-section .section-heading .left-section .current-user-profile-container img {
   width: 100%;
   object-fit: cover;
   object-position: center;
@@ -22,23 +27,25 @@ main .quick-picks-section .quick-picks-heading .left-section .current-user-profi
   border-radius: 28px;
 }
 
-main .quick-picks-section .quick-picks-heading .left-section .heading-title {
+main .quick-picks-section .section-heading .left-section .heading-title {
   cursor: pointer;
   transition: all 0.15s;
   white-space: nowrap;
 }
 
-main .quick-picks-section .quick-picks-heading .left-section .heading-title:hover {
+main .quick-picks-section .section-heading .left-section .heading-title:hover {
   text-decoration: underline;
 }
 
-main .quick-picks-section .quick-picks-heading .right-section {
+main .quick-picks-section .section-heading .right-section {
+  width: 180px;
   display: flex;
   align-items: center;
   gap: 16px;
+  justify-content: end;
 }
 
-main .quick-picks-section .quick-picks-heading .right-section .play-all-button {
+main .quick-picks-section .section-heading .right-section .play-all-button {
   background-color: transparent;
   color: #fff;
   font-family: Roboto, Arial, sans-serif;
@@ -51,33 +58,33 @@ main .quick-picks-section .quick-picks-heading .right-section .play-all-button {
   white-space: nowrap;
 }
 
-main .quick-picks-section .quick-picks-heading .right-section .play-all-button:hover {
+main .quick-picks-section .section-heading .right-section .play-all-button:hover {
   background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid transparent;
 }
 
-main .quick-picks-section .quick-picks-heading .right-section .play-all-button:active {
+main .quick-picks-section .section-heading .right-section .play-all-button:active {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
-main .quick-picks-section .quick-picks-heading .right-section button img {
+main .quick-picks-section .section-heading .right-section button img {
   vertical-align: middle;
 }
 
-main .quick-picks-section .quick-picks-heading .right-section button {
+main .quick-picks-section .section-heading .right-section button {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 6px 6px;
+  padding: 6px;
   border-radius: 100px;
   cursor: pointer;
   transition: all 0.15s;
 }
 
-main .quick-picks-section .quick-picks-heading .right-section button:hover {
+main .quick-picks-section .section-heading .right-section button:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-main .quick-picks-section .quick-picks-heading .right-section button:active {
+main .quick-picks-section .section-heading .right-section button:active {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
