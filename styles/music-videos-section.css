@@ -1,0 +1,197 @@
+main .music-videos-section {
+  margin-bottom: 46px;
+}
+
+main .music-videos-section .section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+main .music-videos-section .section-heading .heading-title {
+  flex: 1;
+  white-space: nowrap;
+}
+
+main .music-videos-section .section-heading .heading-actions {
+  width: 190px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+main .music-videos-section .section-heading .heading-actions button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 14px;
+  padding: 6px;
+  border-radius: 100px;
+  cursor: pointer;
+  font-family: Roboto, Arial, sans-serif;
+  transition: all 0.15s;
+}
+
+main .music-videos-section .section-heading .heading-actions button img {
+  vertical-align: middle;
+}
+
+main .music-videos-section .section-heading .heading-actions .play-all-button {
+  padding: 8px 16px;
+}
+
+main .music-videos-section .section-heading .heading-actions button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+main .music-videos-section .section-heading .heading-actions button:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+main .music-videos-section .section-heading .heading-actions .play-all-button:hover {
+  border: 1px solid transparent;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+main .music-videos-section .section-heading .heading-actions .play-all-button:active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+main .music-videos-section .music-videos-grid {
+  display: grid;
+  grid-auto-columns: 322px;
+  grid-auto-flow: column;
+  grid-template-rows: 1fr;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  column-gap: 24px;
+}
+
+main .music-videos-section .music-videos-grid::-webkit-scrollbar {
+  display: none;
+}
+
+main .music-videos-section .music-videos-grid {
+  scrollbar-width: none;
+}
+
+main .music-videos-section .music-videos-grid .music-video-preview {
+  width: 100%;
+}
+
+main .music-videos-section .music-videos-grid .music-video-preview .music-video-thumbnail {
+  width: 100%;
+  position: relative;
+}
+
+main .music-videos-section .music-videos-grid .music-video-preview .music-video-thumbnail img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 8px;
+}
+
+main .music-videos-section
+.music-videos-grid .music-video-preview
+.music-video-thumbnail .music-video-thumbnail-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  transition: all 0.15s ease-in;
+}
+
+main
+.music-videos-section
+.music-videos-grid
+.music-video-preview
+.music-video-thumbnail
+.music-video-thumbnail-overlay
+.music-video-play-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+main .music-videos-section
+.music-videos-grid .music-video-preview
+.music-video-thumbnail .music-video-thumbnail-overlay
+.music-video-play-btn img {
+  height: 38px;
+  vertical-align: middle;
+}
+
+main .music-videos-section
+.music-videos-grid .music-video-preview
+.music-video-thumbnail:hover .music-video-thumbnail-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.15s ease-out;
+}
+
+main .music-videos-section
+.music-videos-grid .music-video-preview
+.music-video-thumbnail .music-video-more-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 11px 6px;
+  background-color: transparent;
+  border: none;
+  border-radius: 200px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.15s ease-in;
+}
+
+main .music-videos-section
+.music-videos-grid .music-video-preview
+.music-video-thumbnail .music-video-more-btn img {
+  vertical-align: middle;
+  width: 26;
+}
+
+main .music-videos-section
+.music-videos-grid .music-video-preview
+.music-video-thumbnail .music-video-more-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.15s;
+}
+
+main .music-videos-section
+.music-videos-grid .music-video-preview
+.music-video-thumbnail:hover .music-video-more-btn {
+  opacity: 1;
+  transition: all 0.15s ease-out;
+}
+
+main .music-videos-section .music-videos-grid .music-video-preview .music-video-info {
+  padding: 12px 4px;
+}
+
+main .music-videos-section .music-videos-grid .music-video-preview .music-video-info p a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.15s;
+}
+
+main .music-videos-section .music-videos-grid .music-video-preview .music-video-info p a:hover {
+  text-decoration: underline;
+}
+
+main .music-videos-section .music-videos-grid .music-video-preview .music-video-info .music-video-title {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+main .music-videos-section .music-videos-grid .music-video-preview .music-video-info .music-video-stats {
+  color: rgba(255, 255, 255, 0.7);
+} 
+
