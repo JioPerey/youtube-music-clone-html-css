@@ -1,0 +1,55 @@
+body {
+  padding: 95px 124px 300px 170px;
+}
+
+main .categories-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+main .categories-section
+.categories-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 14px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in;
+}
+
+main .categories-section
+.categories-card:hover {
+  background-color: rgba(255, 255, 255, 0.13);
+  transition: background-color 0.15s ease-out;
+}
+
+
+main .categories-section
+.categories-card .category-title {
+  white-space: nowrap;
+}
+
+main .categories-section
+.categories-card .music-icon-container img {
+  vertical-align: middle;
+  height: 28px;
+}
+
+@media (max-width: 936px) {
+  body {
+    padding: 95px 48px 300px 112px;
+  }
+
+  main .categories-section {
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+  }
+
+  main .categories-section
+  .categories-card .music-icon-container img {
+    height: 24px;
+  }
+}

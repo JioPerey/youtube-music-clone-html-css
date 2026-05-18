@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube Music Clone | Explore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/categories-section.css">
+    <script defer src="scripts/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <section class="left-section">
+        <div class="hamburger-menu-container">
+          <img class="hamburger-menu" src="icons/hambuger-menu-icon.svg" alt="hamburger menu">
+        </div>
+        <a href="index.html">
+          <img class="youtube-music-logo" src="icons/youtube-music-logo.svg" alt="youtube music logo">
+        </a>
+        <div class="search-container">
+          <img class="search-icon" src="icons/search-icon.svg" alt="search icon">
+          <input class="search-input" type="text" placeholder="Search songs, albums, artists, podcasts">
+        </div>
+      </section>
+      <section class="right-section">
+        <div class="cast-button">
+          <img class="cast-icon" src="icons/cast-icon.svg" alt="cast icon">
+        </div>
+        <div class="current-user-profile-container">
+          <img  class="current-user-profile" src="channel-pictures/my-channel.jpg" alt="current user channel">
+        </div>
+      </section>
+    </header>
+    
+    <nav>
+      <a href="index.html" class="nav-link" >
+        <img class="home-icon" src="icons/home-icon.svg" alt="home icon">
+        <p>Home</p>
+      </a>
+      <a href="explore.html" class="nav-link">
+        <img class="explore-icon" src="icons/explore-icon.svg" alt="explore icon">
+        <p>Explore</p>
+      </a>
+      <a class="nav-link">
+        <img class="library-icon" src="icons/library-icon.svg" alt="library icon">
+        <p>Library</p>
+      </a>
+      <a class="nav-link" href="https://music.youtube.com/music_premium/musicfeed">
+        <img class="youtube-music-icon" src="icons/youtube-music.svg" alt="youtube music icon">
+        <p>Upgrade</p>
+      </a>
+    </nav>
+
+    <main>
+      <section class="categories-section">
+        <div class="categories-card">
+          <div class="music-icon-container" >
+            <img src="icons/music-icon.svg">
+          </div>
+          <h2 class="category-title">New Releases</h2>
+        </div>
+        <div class="categories-card">
+          <div class="music-icon-container" >
+            <img src="icons/trending-up.svg">
+          </div>
+          <h2 class="category-title">Charts</h2>
+        </div>
+        <div class="categories-card">
+          <div class="music-icon-container" >
+            <img src="icons/smile-icon.svg">
+          </div>
+          <h2 class="category-title">Mood & genres</h2>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
