@@ -65,6 +65,7 @@ function initCarousel(containerSelector, prevBtnSelector, nextBtnSelector, scrol
 }
 
 // Initialize all carousels
-initCarousel('.video-cards-container', '.previous-button', '.next-button', 398 * 2);
-initCarousel('.playlists-container', '.library-previous-button', '.library-next-button', 200 * 2);
-initCarousel('.music-videos-grid', '.music-videos-prev-btn', '.music-videos-next-btn', 346 * 2);
+initCarousel('.video-cards-container', '.previous-button', '.next-button', 425 * 2);
+initCarousel('.playlists-container', '.library-previous-button', '.library-next-button', 205 * 3);
+initCarousel('.music-videos-grid', '.music-videos-prev-btn', '.music-videos-next-btn', 346 * 3);
+initCarousel('.new-albums-grid', '.new-albums-prev-btn', '.new-albums-next-btn', 205 * 6)

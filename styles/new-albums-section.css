@@ -1,0 +1,276 @@
+main .new-albums-section
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+main .new-albums-section
+.section-heading .heading-title {
+  flex: 1;
+}
+
+main .new-albums-section
+.section-heading .heading-title a{
+  color: inherit;
+  text-decoration: none;
+  transition: text-decoration 0.15s ease-in;
+}
+
+main .new-albums-section
+.section-heading .heading-title a:hover {
+  text-decoration: underline;
+  transition: text-decoration 0.15s ease-out;
+}
+
+main .new-albums-section
+.section-heading .heading-actions {
+  max-width: 190px;
+  display: flex;
+  justify-content: end;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+main .new-albums-section
+.section-heading .heading-actions
+button {
+  font-family: inherit;
+  font-size: 14px;
+  background-color: transparent;
+  color: white;
+  padding: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+main .new-albums-section
+.section-heading .heading-actions
+button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+main .new-albums-section
+.section-heading .heading-actions
+button:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+main .new-albums-section
+.section-heading .heading-actions
+button img {
+  vertical-align: middle;
+}
+
+main .new-albums-section
+.section-heading .heading-actions
+.new-albums-more-btn {
+  padding: 8px 16px;
+  transition: all 0.15s;
+}
+
+main .new-albums-section
+.section-heading .heading-actions
+.new-albums-more-btn:hover {
+  border: 1px solid transparent;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+main .new-albums-section
+.section-heading .heading-actions
+.new-albums-more-btn:active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+main .new-albums-section
+.new-albums-grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-auto-flow: column;
+  grid-auto-columns: 181px;
+  column-gap: 24px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+}
+
+main .new-albums-section
+.new-albums-grid::-webkit-scrollbar {
+  display: none;
+}
+
+main .new-albums-section
+.new-albums-grid {
+  scrollbar-width: none;
+}
+
+main .new-albums-section
+.new-albums-grid .new-album-preview {
+  width: 100%;
+}
+
+main .new-albums-section
+.new-albums-grid .new-album-preview
+.new-album-thumbnail {
+ width: 100%;
+ position: relative;
+}
+
+main .new-albums-section
+.new-albums-grid .new-album-preview
+.new-album-thumbnail img {
+ width: 100%;
+ height: auto;
+ aspect-ratio: 1 / 1;
+ object-fit: cover;
+ object-position: center;
+ display: block;
+ border-radius: 8px;
+}
+
+main .new-albums-section
+.new-albums-grid .new-album-preview
+.new-album-thumbnail .new-album-thumbnail-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.4),
+    transparent 30%
+  );
+  opacity: 0;
+  transition: all 0.15s ease-in;
+  pointer-events: none;
+}
+
+main .new-albums-section
+.new-albums-grid .new-album-preview
+.play-button,
+main .new-albums-section
+.new-albums-grid .new-album-preview
+.new-album-thumbnail .new-album-more-vert-btn {
+  background-color: transparent;
+  border: none;
+  padding: 6px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+main .new-albums-section
+.new-albums-grid .new-album-preview
+.play-button img,
+main .new-albums-section
+.new-albums-grid .new-album-preview
+.new-album-thumbnail .new-album-more-vert-btn img {
+  vertical-align: middle;
+}
+
+main .new-albums-section
+.new-albums-grid .new-album-preview
+.new-album-thumbnail .play-button {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+main .new-albums-section
+.new-albums-grid .new-album-preview
+.new-album-thumbnail .play-button img{
+  height: 30px;
+}
+
+main .new-albums-section
+.new-albums-grid .new-album-preview
+.new-album-thumbnail .new-album-more-vert-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.15s;
+}
+
+
+main .new-albums-section
+.new-albums-grid .new-album-preview
+.new-album-thumbnail .new-album-more-vert-btn {
+  position: absolute;
+  top: 10px;
+  right: 4px;
+  opacity: 0;
+  transition: all 0.15s ease-in;
+}
+
+main .new-albums-section
+.new-albums-grid .new-album-preview
+.new-album-thumbnail .play-button {
+  position: absolute;
+  bottom: 10px;
+  right: 12px;
+  opacity: 0;
+  transition: all 0.15s ease-in;
+}
+
+main .new-albums-section
+.new-albums-grid .new-album-preview
+.new-album-thumbnail:hover .new-album-thumbnail-overlay,
+main .new-albums-section
+.new-albums-grid .new-album-preview
+.new-album-thumbnail:hover .new-album-more-vert-btn,
+main .new-albums-section
+.new-albums-grid .new-album-preview
+.new-album-thumbnail:hover .play-button {
+  opacity: 1;
+  transition: all 0.15s ease-out;
+}
+
+main .new-albums-section
+.new-albums-grid .new-album-preview
+.new-album-thumbnail .play-button:hover {
+  transform: scale(1.15);
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: all 0.15 ease-out;
+}
+
+main .new-albums-section
+.new-albums-grid .new-album-preview
+.new-album-info {
+  padding: 12px 2px;
+}
+
+main .new-albums-section
+.new-albums-grid .new-album-preview
+.new-album-info .album-title {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  font-size: inherit;
+  margin-bottom: 5px;
+  display: block;
+  transition: all 0.15s;
+}
+
+main .new-albums-section
+.new-albums-grid .new-album-preview
+.new-album-info .album-title:hover {
+  text-decoration: underline;
+}
+
+main .new-albums-section
+.new-albums-grid .new-album-preview
+.new-album-info .album-author {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+main .new-albums-section
+.new-albums-grid .new-album-preview
+.new-album-info .album-author a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  transition: all 0.15s;
+}
+
+main .new-albums-section
+.new-albums-grid .new-album-preview
+.new-album-info .album-author a:hover {
+text-decoration: underline;
+}

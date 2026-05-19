@@ -72,7 +72,7 @@ main .from-library-section .section-heading .heading-actions .more-button:active
 .playlists-container {
   display: grid;
   grid-template-rows: 1fr;
-  grid-auto-columns: 176px;
+  grid-auto-columns: 181px;
   grid-auto-flow: column;
   column-gap: 24px;
   overflow-x: auto;

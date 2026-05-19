@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>YouTube Music Clone | Explore</title>
+    <title>Explore | YouTube Music Clone  </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/sidebar.css">
     <link rel="stylesheet" href="styles/categories-section.css">
+    <link rel="stylesheet" href="styles/new-albums-section.css">
     <script defer src="scripts/script.js"></script>
   </head>
   <body>
@@ -53,28 +54,657 @@
         <p>Upgrade</p>
       </a>
     </nav>
-
+    
     <main>
+      <!-- Categories Section -->
       <section class="categories-section">
-        <div class="categories-card">
-          <div class="music-icon-container" >
-            <img src="icons/music-icon.svg">
+        <a href="https://music.youtube.com/new_releases">
+          <div class="categories-card">
+            <div class="music-icon-container" >
+              <img src="icons/music-icon.svg">
+            </div>
+            <h2 class="category-title">New releases</h2>
           </div>
-          <h2 class="category-title">New Releases</h2>
-        </div>
-        <div class="categories-card">
-          <div class="music-icon-container" >
-            <img src="icons/trending-up.svg">
+        </a>
+        <a href="https://music.youtube.com/charts">
+          <div class="categories-card">
+            <div class="music-icon-container" >
+              <img src="icons/trending-up.svg">
+            </div>
+            <h2 class="category-title">Charts</h2>
           </div>
-          <h2 class="category-title">Charts</h2>
-        </div>
-        <div class="categories-card">
-          <div class="music-icon-container" >
-            <img src="icons/smile-icon.svg">
+        </a>
+        <a href="https://music.youtube.com/moods_and_genres">
+          <div class="categories-card">
+            <div class="music-icon-container" >
+              <img src="icons/smile-icon.svg">
+            </div>
+            <h2 class="category-title">Mood & genres</h2>
           </div>
-          <h2 class="category-title">Mood & genres</h2>
-        </div>
+        </a>
       </section>
+
+      <!-- New Albums & Singles Section -->
+       <section class="new-albums-section">
+        <div class="section-heading">
+          <h1 class="heading-title">
+            <a href="https://music.youtube.com/new_releases/albums">New albums & singles</a>
+          </h1>
+          <div class="heading-actions">
+            <a href="https://music.youtube.com/new_releases/albums">
+              <button class="new-albums-more-btn">More</button>
+            </a>
+            <button class="new-albums-prev-btn">
+              <img src="icons/previous-icon.svg">
+            </button>
+            <button class="new-albums-next-btn">
+              <img src="icons/next-icon.svg">
+            </button>
+          </div>
+        </div>
+        <div class="new-albums-grid">
+          <div class="new-album-preview">
+            <div class="new-album-thumbnail">
+              <a href="https://music.youtube.com/playlist?list=OLAK5uy_mDgFExLTpd_I6szVUoQzPB3fOLFb_YPqo">
+                <img src="new-albums-thumbnails/love-love-love-thumbnail.jpg">
+              </a>
+              <div class="new-album-thumbnail-overlay"></div>
+              <button class="new-album-more-vert-btn">
+                <img src="icons/more-vert-icon.svg">
+              </button>
+              <a href="https://music.youtube.com/watch?v=OYHhCwuq6dg&list=OLAK5uy_mDgFExLTpd_I6szVUoQzPB3fOLFb_YPqo">
+                <button class="play-button">
+                  <img src="icons/play-icon.svg">
+                </button>
+              </a>
+            </div>
+            <div class="new-album-info">
+              <a class="album-title" href="https://music.youtube.com/playlist?list=OLAK5uy_mDgFExLTpd_I6szVUoQzPB3fOLFb_YPqo">
+                LOVE, LOVE, LOVE
+              </a>
+              <p class="album-author">
+                Album &#183;
+                <a href="https://music.youtube.com/@stephensanchezofficial">
+                  Stephen Sanchez
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="new-album-preview">
+            <div class="new-album-thumbnail">
+              <a href="https://music.youtube.com/playlist?list=OLAK5uy_mFvauLRlA3abx2A1teCx1f_Wub5HStHVM">
+                <img src="new-albums-thumbnails/fictions-you-produce-thumbnail.jpg">
+              </a>
+              <div class="new-album-thumbnail-overlay"></div>
+              <button class="new-album-more-vert-btn">
+                <img src="icons/more-vert-icon.svg">
+              </button>
+              <a href="https://music.youtube.com/watch?v=j4QXsKSFIdw&list=OLAK5uy_mFvauLRlA3abx2A1teCx1f_Wub5HStHVM">
+                <button class="play-button">
+                  <img src="icons/play-icon.svg">
+                </button>
+              </a>
+            </div>
+            <div class="new-album-info">
+              <a class="album-title" href="https://music.youtube.com/playlist?list=OLAK5uy_mFvauLRlA3abx2A1teCx1f_Wub5HStHVM">
+                Fictions You Produce
+              </a>
+              <p class="album-author">
+                Album &#183;
+                <a href="https://music.youtube.com/@arthurneryph">
+                  Arthur Nery
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="new-album-preview">
+            <div class="new-album-thumbnail">
+              <a href="https://music.youtube.com/playlist?list=OLAK5uy_mCNFbydjOLE8aC3sAvexg3AdJeRT3SGYE">
+                <img src="new-albums-thumbnails/panahon-thumbnail.jpg">
+              </a>
+              <div class="new-album-thumbnail-overlay"></div>
+              <button class="new-album-more-vert-btn">
+                <img src="icons/more-vert-icon.svg">
+              </button>
+              <a href="https://music.youtube.com/watch?v=_p7uGzr8jrg&list=OLAK5uy_mCNFbydjOLE8aC3sAvexg3AdJeRT3SGYE">
+                <button class="play-button">
+                  <img src="icons/play-icon.svg">
+                </button>
+              </a>
+            </div>
+            <div class="new-album-info">
+              <a class="album-title" href="https://music.youtube.com/playlist?list=OLAK5uy_mCNFbydjOLE8aC3sAvexg3AdJeRT3SGYE">
+                Panahon
+              </a>
+              <p class="album-author">
+                EP &#183;
+                <a href="https://music.youtube.com/channel/UCQj-yfvAVH3TMPyTN991oUA">
+                  Angela Ken
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="new-album-preview">
+            <div class="new-album-thumbnail">
+              <a href="https://music.youtube.com/playlist?list=OLAK5uy_koIQYv7QFOa5E_FWm635VZEKfZlrAPAjI">
+                <img src="new-albums-thumbnails/falling-out-of-love-thumbnail.jpg">
+              </a>
+              <div class="new-album-thumbnail-overlay"></div>
+              <button class="new-album-more-vert-btn">
+                <img src="icons/more-vert-icon.svg">
+              </button>
+              <a href="https://music.youtube.com/watch?v=-ZdSZN7LdqY&list=OLAK5uy_koIQYv7QFOa5E_FWm635VZEKfZlrAPAjI">
+                <button class="play-button">
+                  <img src="icons/play-icon.svg">
+                </button>
+              </a>
+            </div>
+            <div class="new-album-info">
+              <a class="album-title" href="https://music.youtube.com/playlist?list=OLAK5uy_koIQYv7QFOa5E_FWm635VZEKfZlrAPAjI">
+                Falling out of Love
+              </a>
+              <p class="album-author">
+                Single &#183;
+                <a href="https://music.youtube.com/@thestrokes">
+                  The Strokes
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="new-album-preview">
+            <div class="new-album-thumbnail">
+              <a href="https://music.youtube.com/playlist?list=OLAK5uy_n2O-mmQdi1ggKmZIAiN1KqSEm37rO1W-0">
+                <img src="new-albums-thumbnails/the-pet-sounds-sessions-thumbnail.jpg">
+              </a>
+              <div class="new-album-thumbnail-overlay"></div>
+              <button class="new-album-more-vert-btn">
+                <img src="icons/more-vert-icon.svg">
+              </button>
+              <a href="https://music.youtube.com/watch?v=5lP8BZcyoEQ&list=OLAK5uy_n2O-mmQdi1ggKmZIAiN1KqSEm37rO1W-0">
+                <button class="play-button">
+                  <img src="icons/play-icon.svg">
+                </button>
+              </a>
+            </div>
+            <div class="new-album-info">
+              <a class="album-title" href="https://music.youtube.com/playlist?list=OLAK5uy_n2O-mmQdi1ggKmZIAiN1KqSEm37rO1W-0">
+                The Pet Sounds Sessions (Deluxe Edition)
+              </a>
+              <p class="album-author">
+                Album &#183;
+                <a href="https://music.youtube.com/@thebeachboys">
+                  The Beach Boys
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="new-album-preview">
+            <div class="new-album-thumbnail">
+              <a href="https://music.youtube.com/playlist?list=OLAK5uy_m6GrgnUBPZR_cO9YvtdRisY8JLZ3wg8Es">
+                <img src="new-albums-thumbnails/repeat-it-thumbnail.jpg">
+              </a>
+              <div class="new-album-thumbnail-overlay"></div>
+              <button class="new-album-more-vert-btn">
+                <img src="icons/more-vert-icon.svg">
+              </button>
+              <a href="https://music.youtube.com/watch?v=Sf9NZF5qBak&list=OLAK5uy_m6GrgnUBPZR_cO9YvtdRisY8JLZ3wg8Es">
+                <button class="play-button">
+                  <img src="icons/play-icon.svg">
+                </button>
+              </a>
+            </div>
+            <div class="new-album-info">
+              <a class="album-title" href="https://music.youtube.com/playlist?list=OLAK5uy_m6GrgnUBPZR_cO9YvtdRisY8JLZ3wg8Es">
+                Repeat It
+              </a>
+              <p class="album-author">
+                Single &#183;
+                <a href="https://music.youtube.com/@MartinGarrix">
+                  Martin Garrix
+                </a> &
+                <a href="https://music.youtube.com/@EdSheeran">
+                  Ed Sheeran
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="new-album-preview">
+            <div class="new-album-thumbnail">
+              <a href="https://music.youtube.com/playlist?list=OLAK5uy_kl1WeOZXJ4vAl0OCTldnoRwDvs4JcBTio">
+                <img src="new-albums-thumbnails/grandmas-gospel-favorites-thumbnail.jpg">
+              </a>
+              <div class="new-album-thumbnail-overlay"></div>
+              <button class="new-album-more-vert-btn">
+                <img src="icons/more-vert-icon.svg">
+              </button>
+              <a href="https://music.youtube.com/watch?v=wPHQoo8z6vY&list=OLAK5uy_kl1WeOZXJ4vAl0OCTldnoRwDvs4JcBTio">
+                <button class="play-button">
+                  <img src="icons/play-icon.svg">
+                </button>
+              </a>
+            </div>
+            <div class="new-album-info">
+              <a class="album-title" href="https://music.youtube.com/playlist?list=OLAK5uy_kl1WeOZXJ4vAl0OCTldnoRwDvs4JcBTio">
+                Grandma's Gospel Favorites
+              </a>
+              <p class="album-author">
+                Album &#183;
+                <a href="https://music.youtube.com/@JasonMraz">
+                  Jason Mraz  
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="new-album-preview">
+            <div class="new-album-thumbnail">
+              <a href="https://music.youtube.com/playlist?list=OLAK5uy_mDCvuX2lQmIPIoIw4eoCejLvyD6D0V8wQ">
+                <img src="new-albums-thumbnails/autumn-thumbnail.jpg">
+              </a>
+              <div class="new-album-thumbnail-overlay"></div>
+              <button class="new-album-more-vert-btn">
+                <img src="icons/more-vert-icon.svg">
+              </button>
+              <a href="https://music.youtube.com/watch?v=TKS4UOXlITI&list=OLAK5uy_mDCvuX2lQmIPIoIw4eoCejLvyD6D0V8wQ">
+                <button class="play-button">
+                  <img src="icons/play-icon.svg">
+                </button>
+              </a>
+            </div>
+            <div class="new-album-info">
+              <a class="album-title" href="https://music.youtube.com/playlist?list=OLAK5uy_mDCvuX2lQmIPIoIw4eoCejLvyD6D0V8wQ">
+                Autumn (Reimagined)
+              </a>
+              <p class="album-author">
+                EP &#183;
+                <a href="https://music.youtube.com/@benandbenmusic">
+                  Ben&Ben  
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="new-album-preview">
+            <div class="new-album-thumbnail">
+              <a href="https://music.youtube.com/playlist?list=OLAK5uy_mbWnOHz4s__MBlbyl4knAZx9RIwAbfnVM">
+                <img src="new-albums-thumbnails/tayo-na-dali-thumbnail.jpg">
+              </a>
+              <div class="new-album-thumbnail-overlay"></div>
+              <button class="new-album-more-vert-btn">
+                <img src="icons/more-vert-icon.svg">
+              </button>
+              <a href="https://music.youtube.com/watch?v=TKS4UOXlITI&list=OLAK5uy_mDCvuX2lQmIPIoIw4eoCejLvyD6D0V8wQ">
+                <button class="play-button">
+                  <img src="icons/play-icon.svg">
+                </button>
+              </a>
+            </div>
+            <div class="new-album-info">
+              <a class="album-title" href="https://music.youtube.com/watch?v=SJcRTJvWLMo&list=OLAK5uy_mbWnOHz4s__MBlbyl4knAZx9RIwAbfnVM">
+                Tayo Na, Dali!
+              </a>
+              <p class="album-author">
+                Single &#183;
+                <a href="https://music.youtube.com/@bloomfieldsmusic">
+                  The Bloomfields 
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="new-album-preview">
+            <div class="new-album-thumbnail">
+              <a href="https://music.youtube.com/playlist?list=OLAK5uy_nRn4L6n21VwNNLZOMxVZ2WroeAvZ4rUlk">
+                <img src="new-albums-thumbnails/opm-punk-rock-vibe-vol-1-thumbnail.jpg">
+              </a>
+              <div class="new-album-thumbnail-overlay"></div>
+              <button class="new-album-more-vert-btn">
+                <img src="icons/more-vert-icon.svg">
+              </button>
+              <a href="https://music.youtube.com/watch?v=SZRlKae1J-w&list=OLAK5uy_nRn4L6n21VwNNLZOMxVZ2WroeAvZ4rUlk">
+                <button class="play-button">
+                  <img src="icons/play-icon.svg">
+                </button>
+              </a>
+            </div>
+            <div class="new-album-info">
+              <a class="album-title" href="https://music.youtube.com/playlist?list=OLAK5uy_nRn4L6n21VwNNLZOMxVZ2WroeAvZ4rUlk">
+                Opm Punk Rock Vibe, Vol. 1
+              </a>
+              <p class="album-author">
+                Album &#183;
+                <a href="https://music.youtube.com/@TheUltimateHeroes">
+                  The Ultimate Heroes
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="new-album-preview">
+            <div class="new-album-thumbnail">
+              <a href="https://music.youtube.com/playlist?list=OLAK5uy_ni7Fkm59ZLdZS9h58zCD-uuXmptd_lsdg">
+                <img src="new-albums-thumbnails/tahan-na-thumbnail.jpg">
+              </a>
+              <div class="new-album-thumbnail-overlay"></div>
+              <button class="new-album-more-vert-btn">
+                <img src="icons/more-vert-icon.svg">
+              </button>
+              <a href="https://music.youtube.com/watch?v=5w1Vo48jTWE&list=OLAK5uy_ni7Fkm59ZLdZS9h58zCD-uuXmptd_lsdg">
+                <button class="play-button">
+                  <img src="icons/play-icon.svg">
+                </button>
+              </a>
+            </div>
+            <div class="new-album-info">
+              <a class="album-title" href="https://music.youtube.com/playlist?list=OLAK5uy_ni7Fkm59ZLdZS9h58zCD-uuXmptd_lsdg">
+                Tahan Na
+              </a>
+              <p class="album-author">
+                Single &#183;
+                <a href="https://music.youtube.com/channel/UCBsC49bZ6-JUkABGkHSmZUg">
+                  JC Herrero
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="new-album-preview">
+            <div class="new-album-thumbnail">
+              <a href="https://music.youtube.com/playlist?list=OLAK5uy_lbPUH1U9sNuS54xnH5ySTcU9ZdblckUSA">
+                <img src="new-albums-thumbnails/dito-muna-tayo-thumbnail.jpg">
+              </a>
+              <div class="new-album-thumbnail-overlay"></div>
+              <button class="new-album-more-vert-btn">
+                <img src="icons/more-vert-icon.svg">
+              </button>
+              <a href="https://music.youtube.com/watch?v=DBY5NW1Jxjk&list=OLAK5uy_lbPUH1U9sNuS54xnH5ySTcU9ZdblckUSA">
+                <button class="play-button">
+                  <img src="icons/play-icon.svg">
+                </button>
+              </a>
+            </div>
+            <div class="new-album-info">
+              <a class="album-title" href="https://music.youtube.com/playlist?list=OLAK5uy_lbPUH1U9sNuS54xnH5ySTcU9ZdblckUSA">
+                dito muna tayo
+              </a>
+              <p class="album-author">
+                Single &#183;
+                <a href="https://music.youtube.com/@sydhartha">
+                  syd hartha
+                </a> &
+                <a href="https://music.youtube.com/channel/UC4E2f5-fQeyWCxOQAnMZ6PQ">
+                  TONEEJAY
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="new-album-preview">
+            <div class="new-album-thumbnail">
+              <a href="https://music.youtube.com/playlist?list=OLAK5uy_n7eA_8XdrOcpjOl6wDGOi43LDYBgexOm0">
+                <img src="new-albums-thumbnails/pako-thumbnail.jpg">
+              </a>
+              <div class="new-album-thumbnail-overlay"></div>
+              <button class="new-album-more-vert-btn">
+                <img src="icons/more-vert-icon.svg">
+              </button>
+              <a href="https://music.youtube.com/watch?v=DJJ12UwTiwo&list=OLAK5uy_n7eA_8XdrOcpjOl6wDGOi43LDYBgexOm0">
+                <button class="play-button">
+                  <img src="icons/play-icon.svg">
+                </button>
+              </a>
+            </div>
+            <div class="new-album-info">
+              <a class="album-title" href="https://music.youtube.com/playlist?list=OLAK5uy_n7eA_8XdrOcpjOl6wDGOi43LDYBgexOm0">
+                PAKO (Open Verse)
+              </a>
+              <p class="album-author">
+                Single &#183;
+                <a href="https://music.youtube.com/@JustinJTaller">
+                  Justin Taller
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="new-album-preview">
+            <div class="new-album-thumbnail">
+              <a href="https://music.youtube.com/playlist?list=OLAK5uy_lxnT0rwLJhxpmKsjto5cRgepKC3v4Y1wc">
+                <img src="new-albums-thumbnails/lunod-thumbnail.jpg">
+              </a>
+              <div class="new-album-thumbnail-overlay"></div>
+              <button class="new-album-more-vert-btn">
+                <img src="icons/more-vert-icon.svg">
+              </button>
+              <a href="https://music.youtube.com/watch?v=K8rOqjCeg68&list=OLAK5uy_lxnT0rwLJhxpmKsjto5cRgepKC3v4Y1wc">
+                <button class="play-button">
+                  <img src="icons/play-icon.svg">
+                </button>
+              </a>
+            </div>
+            <div class="new-album-info">
+              <a class="album-title" href="https://music.youtube.com/playlist?list=OLAK5uy_lxnT0rwLJhxpmKsjto5cRgepKC3v4Y1wc">
+                Lunod (feat. EC Orduna)
+              </a>
+              <p class="album-author">
+                Single &#183;
+                <a href="https://music.youtube.com/@Gloc9official">
+                  Gloc-9
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="new-album-preview">
+            <div class="new-album-thumbnail">
+              <a href="https://music.youtube.com/playlist?list=OLAK5uy_njQgcon4kzlAlnUKNcwOuNo9qvXs5IB6A">
+                <img src="new-albums-thumbnails/the-best-thumbnail.jpg">
+              </a>
+              <div class="new-album-thumbnail-overlay"></div>
+              <button class="new-album-more-vert-btn">
+                <img src="icons/more-vert-icon.svg">
+              </button>
+              <a href="https://music.youtube.com/watch?v=xC-SiiQZdzI&list=OLAK5uy_njQgcon4kzlAlnUKNcwOuNo9qvXs5IB6A">
+                <button class="play-button">
+                  <img src="icons/play-icon.svg">
+                </button>
+              </a>
+            </div>
+            <div class="new-album-info">
+              <a class="album-title" href="https://music.youtube.com/playlist?list=OLAK5uy_njQgcon4kzlAlnUKNcwOuNo9qvXs5IB6A">
+                The Best
+              </a>
+              <p class="album-author">
+                Album &#183;
+                <a href="https://music.youtube.com/@gelmusic01">
+                  GelMusic
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="new-album-preview">
+            <div class="new-album-thumbnail">
+              <a href="https://music.youtube.com/playlist?list=OLAK5uy_mawV7IB_gKBsbpGILgA5ODd5WfJSqhjxU">
+                <img src="new-albums-thumbnails/opm-rock-covers-vol-1-thumbnail.jpg">
+              </a>
+              <div class="new-album-thumbnail-overlay"></div>
+              <button class="new-album-more-vert-btn">
+                <img src="icons/more-vert-icon.svg">
+              </button>
+              <a href="https://music.youtube.com/watch?v=EMDg-Zyn62I&list=OLAK5uy_mawV7IB_gKBsbpGILgA5ODd5WfJSqhjxU">
+                <button class="play-button">
+                  <img src="icons/play-icon.svg">
+                </button>
+              </a>
+            </div>
+            <div class="new-album-info">
+              <a class="album-title" href="https://music.youtube.com/playlist?list=OLAK5uy_mawV7IB_gKBsbpGILgA5ODd5WfJSqhjxU">
+                Opm Rock Covers, Vol. 1
+              </a>
+              <p class="album-author">
+                Album &#183;
+                <a href="https://music.youtube.com/@RYNXRockMuzik">
+                  RYNX
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="new-album-preview">
+            <div class="new-album-thumbnail">
+              <a href="https://music.youtube.com/playlist?list=OLAK5uy_mMD_lVKdrIIVnT8YX50VNcqXpEsXitmdE">
+                <img src="new-albums-thumbnails/isa-dalawa-tatlo-cha-thumbnail.jpg">
+              </a>
+              <div class="new-album-thumbnail-overlay"></div>
+              <button class="new-album-more-vert-btn">
+                <img src="icons/more-vert-icon.svg">
+              </button>
+              <a href="https://music.youtube.com/watch?v=2eblQ0w2UMU&list=OLAK5uy_mMD_lVKdrIIVnT8YX50VNcqXpEsXitmdE">
+                <button class="play-button">
+                  <img src="icons/play-icon.svg">
+                </button>
+              </a>
+            </div>
+            <div class="new-album-info">
+              <a class="album-title" href="https://music.youtube.com/playlist?list=OLAK5uy_mMD_lVKdrIIVnT8YX50VNcqXpEsXitmdE">
+                Isa, Dalawa, Tatlo, Cha
+              </a>
+              <p class="album-author">
+                Single &#183;
+                <a href="https://music.youtube.com/@YConstantino">
+                  Yeng Constantino
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="new-album-preview">
+            <div class="new-album-thumbnail">
+              <a href="https://music.youtube.com/playlist?list=OLAK5uy_kysCIbzmW_EQI_f2_lBWwqNSp5owuM5SU">
+                <img src="new-albums-thumbnails/lovesick-thumbnail.jpg">
+              </a>
+              <div class="new-album-thumbnail-overlay"></div>
+              <button class="new-album-more-vert-btn">
+                <img src="icons/more-vert-icon.svg">
+              </button>
+              <a href="https://music.youtube.com/watch?v=NVCwU1PblT0&list=OLAK5uy_kysCIbzmW_EQI_f2_lBWwqNSp5owuM5SU">
+                <button class="play-button">
+                  <img src="icons/play-icon.svg">
+                </button>
+              </a>
+            </div>
+            <div class="new-album-info">
+              <a class="album-title" href="https://music.youtube.com/playlist?list=OLAK5uy_kysCIbzmW_EQI_f2_lBWwqNSp5owuM5SU">
+                Lovesick (Mas Pinasakit)
+              </a>
+              <p class="album-author">
+                Single &#183;
+                <a href="https://music.youtube.com/@cesca268">
+                  Cesca
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="new-album-preview">
+            <div class="new-album-thumbnail">
+              <a href="https://music.youtube.com/playlist?list=OLAK5uy_lrpt_u8MORrwX7omo09ZPKWKyPKe3pH50">
+                <img src="new-albums-thumbnails/ikaw-at-ikaw-thumbnail.jpg">
+              </a>
+              <div class="new-album-thumbnail-overlay"></div>
+              <button class="new-album-more-vert-btn">
+                <img src="icons/more-vert-icon.svg">
+              </button>
+              <a href="https://music.youtube.com/watch?v=ZYoCDXkOtJE&list=OLAK5uy_lrpt_u8MORrwX7omo09ZPKWKyPKe3pH50">
+                <button class="play-button">
+                  <img src="icons/play-icon.svg">
+                </button>
+              </a>
+            </div>
+            <div class="new-album-info">
+              <a class="album-title" href="https://music.youtube.com/playlist?list=OLAK5uy_lrpt_u8MORrwX7omo09ZPKWKyPKe3pH50">
+                Ikaw at Ikaw
+              </a>
+              <p class="album-author">
+                Single &#183;
+                <a href="https://music.youtube.com/@iminigopascual">
+                  Inigo Pascual
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="new-album-preview">
+            <div class="new-album-thumbnail">
+              <a href="https://music.youtube.com/playlist?list=OLAK5uy_l81m8XHbCP-Jj3QFNvgEWtT5FiQx407e4">
+                <img src="new-albums-thumbnails/tayo-parin-thumbnail.jpg">
+              </a>
+              <div class="new-album-thumbnail-overlay"></div>
+              <button class="new-album-more-vert-btn">
+                <img src="icons/more-vert-icon.svg">
+              </button>
+              <a href="https://music.youtube.com/watch?v=zdQLRtiZkRI&list=OLAK5uy_l81m8XHbCP-Jj3QFNvgEWtT5FiQx407e4">
+                <button class="play-button">
+                  <img src="icons/play-icon.svg">
+                </button>
+              </a>
+            </div>
+            <div class="new-album-info">
+              <a class="album-title" href="https://music.youtube.com/playlist?list=OLAK5uy_l81m8XHbCP-Jj3QFNvgEWtT5FiQx407e4">
+                TAYO PARIN
+              </a>
+              <p class="album-author">
+                Single &#183;
+                <a href="https://music.youtube.com/@SALBAKUTA">
+                  SALBAKUTA
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="new-album-preview">
+            <div class="new-album-thumbnail">
+              <a href="https://music.youtube.com/playlist?list=OLAK5uy_nxRJ30Gzza_A-gwRzpV01NZo3a5ui8Uak">
+                <img src="new-albums-thumbnails/kalapastanganan-thumbnail.jpg">
+              </a>
+              <div class="new-album-thumbnail-overlay"></div>
+              <button class="new-album-more-vert-btn">
+                <img src="icons/more-vert-icon.svg">
+              </button>
+              <a href="https://music.youtube.com/watch?v=-ToHwvtozI4&list=OLAK5uy_nxRJ30Gzza_A-gwRzpV01NZo3a5ui8Uak">
+                <button class="play-button">
+                  <img src="icons/play-icon.svg">
+                </button>
+              </a>
+            </div>
+            <div class="new-album-info">
+              <a class="album-title" href="https://music.youtube.com/playlist?list=OLAK5uy_nxRJ30Gzza_A-gwRzpV01NZo3a5ui8Uak">
+                Kalapastanganan (Acoustic Version)
+              </a>
+              <p class="album-author">
+                Single &#183;
+                <a href="https://music.youtube.com/@yuhiiiiiii">
+                  YUHI
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="new-album-preview">
+            <div class="new-album-thumbnail">
+              <a href="https://music.youtube.com/playlist?list=OLAK5uy_nwObhxXyYo8dZiw9GDM2bSAw-W-t9RypY">
+                <img src="new-albums-thumbnails/walang-ibang-ikaw-thumbnail.jpg">
+              </a>
+              <div class="new-album-thumbnail-overlay"></div>
+              <button class="new-album-more-vert-btn">
+                <img src="icons/more-vert-icon.svg">
+              </button>
+              <a href="https://music.youtube.com/watch?v=n3HzhhrIB7o&list=OLAK5uy_nwObhxXyYo8dZiw9GDM2bSAw-W-t9RypY">
+                <button class="play-button">
+                  <img src="icons/play-icon.svg">
+                </button>
+              </a>
+            </div>
+            <div class="new-album-info">
+              <a class="album-title" href="https://music.youtube.com/playlist?list=OLAK5uy_nwObhxXyYo8dZiw9GDM2bSAw-W-t9RypY">
+                Walang Ibang Ikaw (Stripped Down)
+              </a>
+              <p class="album-author">
+                Single &#183;
+                <a href="https://music.youtube.com/channel/UCvYpWufnhNrK4-YuM9CKKrA">
+                  Freestyle
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+       </section>
     </main>
   </body>
 </html>

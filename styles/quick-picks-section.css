@@ -94,7 +94,7 @@ main .quick-picks-section .section-heading .right-section button:active {
   grid-auto-flow: column;
   overflow-x: auto;
   overscroll-behavior-x: contain;
-  grid-auto-columns: 374px;
+  grid-auto-columns: 380px;
   column-gap: 24px;
   row-gap: 16px;
   padding: 16px 10px;
