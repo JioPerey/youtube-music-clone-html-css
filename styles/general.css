@@ -10,3 +10,9 @@ body {
   color: white;
   padding: 110px 100px 300px 170px;
 }
+
+@media (max-width: 936px) {
+  body {
+    padding: 95px 48px 300px 112px;
+  }
+}

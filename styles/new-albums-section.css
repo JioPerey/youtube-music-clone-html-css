@@ -1,3 +1,7 @@
+main .new-albums-section {
+  margin-bottom: 46px;
+}
+
 main .new-albums-section
 .section-heading {
   display: flex;
@@ -29,6 +33,7 @@ main .new-albums-section
   max-width: 190px;
   display: flex;
   justify-content: end;
+  align-items: center;
   gap: 16px;
   flex-shrink: 0;
 }

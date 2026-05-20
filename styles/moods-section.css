@@ -1,0 +1,244 @@
+.moods-section .section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.moods-section .section-heading
+.heading-title {
+  flex-shrink: 0;
+}
+
+.moods-section .section-heading
+.heading-title a {
+  text-decoration: none;
+  color: inherit;
+  transition: text-decoration 0.15s;
+}
+
+.moods-section .section-heading
+.heading-title a:hover {
+  text-decoration: underline;
+}
+
+.moods-section .section-heading
+.heading-actions {
+  width: 190px;
+  display: flex;
+  justify-content: end;
+  column-gap: 16px;
+  align-items: center;
+  flex-shrink: 0;
+}
+.moods-section .section-heading
+.heading-actions button {
+  font-family: inherit;
+  font-size: 14px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 6px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.moods-section .section-heading
+.heading-actions button img {
+  vertical-align: middle;
+}
+
+.moods-section .section-heading
+.heading-actions button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.moods-section .section-heading
+.heading-actions button:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.moods-section .section-heading
+.heading-actions .moods-more-btn {
+  padding: 8px 16px;
+}
+
+.moods-section .section-heading
+.heading-actions .moods-more-btn:hover {
+  border: 1px solid transparent;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.moods-section .section-heading
+.heading-actions .moods-more-btn:active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.moods-section .moods-grid {
+  display: grid;
+  grid-template-rows: repeat(4, 48px);
+  row-gap: 16px;
+  grid-auto-columns: calc((100% - 5 * 24px) / 6);
+  grid-auto-flow: column;
+  column-gap: 24px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+}
+
+@media (max-width: 1360px) {
+  .moods-section .moods-grid {
+    grid-auto-columns: calc((100% - 4 * 24px) / 5);
+  }
+}
+
+@media (max-width: 992px) {
+  .moods-section .moods-grid {
+    grid-auto-columns: calc((100% - 3 * 24px) / 4);
+  }
+}
+
+@media (max-width: 768px) {
+  .moods-section .moods-grid {
+    grid-auto-columns: calc((100% - 2 * 24px) / 3);
+  }
+}
+
+@media (max-width: 576px) {
+  .moods-section .moods-grid {
+    grid-auto-columns: calc((100% - 1 * 24px) / 2);
+  }
+}
+
+.moods-section .moods-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.moods-section .moods-grid {
+  scrollbar-width: none;
+}
+
+.moods-section .moods-grid
+.card {
+  text-decoration: none;
+  color: inherit;
+  background-color: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  position: relative;
+  padding-left: 16px;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in;
+}
+
+.moods-section .moods-grid
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.15s ease-out;
+}
+
+.moods-section .moods-grid
+.card:active {
+  background-color: rgba(255, 255, 255, 0.06);
+  transition: background-color 0.15s ease-out;
+}
+
+.moods-section .moods-grid
+.card::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 6px; 
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: -100px;
+  border-bottom-right-radius: -8px;
+}
+
+.moods-section .moods-grid
+.card .card-title {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* Gray Colors */
+.card.accent-light-gray::before {
+  background: rgb(204, 204, 204);
+}
+
+.card.accent-medium-gray::before {
+  background: rgb(140, 140, 140);
+}
+
+.card.accent-charcoal-gray::before {
+  background: rgb(96, 96, 96);
+}
+
+/* Yellow Colors */
+.card.accent-amber-gold::before {
+  background: rgb(255, 194, 0);
+}
+
+.card.accent-light-yellow::before {
+  background: rgb(255, 231, 128);
+}
+
+/* Green Colors */
+.card.accent-mint-green::before {
+  background: rgb(164, 255, 164);
+}
+
+.card.accent-kelly-green::before {
+  background: rgb(0, 165, 19);
+}
+
+/* Blue Colors */
+.card.accent-periwinkle-blue::before {
+  background: rgb(164, 197, 255);
+}
+
+.card.accent-royal-blue::before {
+  background: rgb(51, 125, 255);
+}
+
+.card.accent-teal-blue::before {
+  background: rgb(0, 146, 191);
+}
+
+.card.accent-cyan::before {
+  background: rgb(77, 238, 255);
+}
+
+/* Purple Colors */
+.card.accent-lavender-purple::before {
+  background: rgb(180, 123, 255);
+}
+
+.card.accent-deep-purple::before {
+  background: rgb(123, 62, 219);
+}
+
+/* Red/Pink Colors */
+.card.accent-crimson-red::before {
+  background: rgb(204, 0, 0);
+}
+
+.card.accent-hot-pink::before {
+  background: rgb(255, 120, 255);
+}
+
+.card.accent-coral-pink::before {
+  background: rgb(255, 137, 131);
+}
+
+/* Orange Colors */
+.card.accent-tangerine-orange::before {
+  background: rgb(255, 141, 64);
+}
+
+.card.accent-burnt-orange::before {
+  background: rgb(226, 75, 0);
+}
