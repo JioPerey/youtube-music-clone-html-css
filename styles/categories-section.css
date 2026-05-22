@@ -1,5 +1,5 @@
 body {
-  padding: 95px 100px 300px 170px;
+  padding: 95px 100px 48px 170px;
 }
 
 main .categories-section {
@@ -46,7 +46,7 @@ main .categories-section
 
 @media (max-width: 936px) {
   body {
-    padding: 95px 48px 300px 112px;
+    padding: 95px 48px 48px 112px;
   }
 
   main .categories-section {

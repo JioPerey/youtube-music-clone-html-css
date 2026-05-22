@@ -1,3 +1,7 @@
+.moods-section {
+  margin-bottom: 80px;
+}
+
 .moods-section .section-heading {
   display: flex;
   justify-content: space-between;
@@ -241,4 +245,14 @@
 
 .card.accent-burnt-orange::before {
   background: rgb(226, 75, 0);
+}
+
+.music-videos-section .section-heading .heading-title a{
+  text-decoration: none;
+  color: inherit;
+  transition: text-decoration 0.15s;
+}
+
+.music-videos-section .section-heading .heading-title a:hover {
+  text-decoration: underline;
 }
