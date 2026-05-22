@@ -148,7 +148,7 @@ main .from-library-section .section-heading .heading-actions .more-button:active
 }
 
 .playlists-container .playlist-card .playlist-thumbnail .play-button img {
-  height: 30px;
+  height: 24px;
 }
 
 .playlists-container .playlist-card .playlist-thumbnail .playlist-more-button:hover {
@@ -195,7 +195,7 @@ main .from-library-section .section-heading .heading-actions .more-button:active
 }
 
 .playlists-container .playlist-card .playlist-thumbnail .play-button:hover {
-  transform: scale(1.15);
+  transform: scale(1.25);
   background-color: rgba(0, 0, 0, 0.9);
   transition: all 0.15 ease-out;
 }

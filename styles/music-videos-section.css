@@ -121,8 +121,10 @@ main .music-videos-section
 .music-videos-grid .music-video-preview
 .music-video-thumbnail .music-video-thumbnail-overlay
 .music-video-play-btn img {
-  height: 38px;
-  vertical-align: middle;
+  height: 46px;
+  object-fit: contain;
+  object-position: center;
+  display: block;
 }
 
 main .music-videos-section
