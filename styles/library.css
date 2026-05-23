@@ -1,0 +1,47 @@
+header .right-section .cast-button {
+  margin-left: 0;
+}
+
+header .right-section .history-link .history-icon {
+  vertical-align: top;
+  cursor: pointer;
+}
+
+header {
+  padding-right: 108px;
+}
+
+body {
+  padding-top: 94px;
+}
+
+main .chips-section .chip {
+  padding: 8px 12px;
+}
+
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  column-gap: 24px;
+  row-gap: 16px;
+}
+
+.playlist-card .playlist-info p,
+.playlist-card .playlist-info a,
+.playlist-card .playlist-info .category{
+  font-size: 14px;
+}
+
+.playlist-card .playlist-info .playlist-title {
+  font-weight: 500;
+}
+
+.pin-icon {
+  width: 16px;
+  vertical-align: top;
+}
+
+.playlist-card .playlist-info {
+  padding: 12px 0;
+}
+

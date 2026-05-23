@@ -88,11 +88,11 @@ main .from-library-section .section-heading .heading-actions .more-button:active
   scrollbar-width: none;
 }
 
-.playlists-container .playlist-card .playlist-thumbnail {
+.playlist-card .playlist-thumbnail {
   position: relative;
 }
 
-.playlists-container .playlist-card .playlist-thumbnail img {
+.playlist-card .playlist-thumbnail img {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
@@ -101,11 +101,11 @@ main .from-library-section .section-heading .heading-actions .more-button:active
   border-radius: 8px;
 }
 
-.playlists-container .playlist-card .playlist-info {
+.playlist-card .playlist-info {
   padding: 12px 3px;
 }
 
-.playlists-container .playlist-card .playlist-info a {
+.playlist-card .playlist-info a {
   text-decoration: none;
   display: block;
   color: white;
@@ -115,25 +115,25 @@ main .from-library-section .section-heading .heading-actions .more-button:active
   margin-bottom: 3px;
 }
 
-.playlists-container .playlist-card .playlist-info a:hover {
+.playlist-card .playlist-info a:hover {
   text-decoration: underline;
 }
-
-.playlists-container .playlist-card .playlist-info .playlist-author,
-.playlists-container .playlist-card .playlist-info .playlist-tracks-no  {
+.playlist-card .playlist-info .playlist-author,
+.playlist-card .playlist-info .playlist-tracks-no,
+.playlist-card .playlist-info .category {
   display: inline;
   color: rgba(255, 255, 255, 0.7);
   font-weight: 400;
 }
 
-.playlists-container .playlist-card .playlist-thumbnail .playlist-more-button img,
-.playlists-container .playlist-card .playlist-thumbnail .play-button img
+.playlist-card .playlist-thumbnail .playlist-more-button img,
+.playlist-card .playlist-thumbnail .play-button img
 {
   vertical-align: middle;
 }
 
-.playlists-container .playlist-card .playlist-thumbnail .playlist-more-button,
-.playlists-container .playlist-card .playlist-thumbnail .play-button
+.playlist-card .playlist-thumbnail .playlist-more-button,
+.playlist-card .playlist-thumbnail .play-button
 {
   background-color: transparent;
   border: none;
@@ -143,20 +143,20 @@ main .from-library-section .section-heading .heading-actions .more-button:active
   transition: all 0.15s;
 }
 
-.playlists-container .playlist-card .playlist-thumbnail .play-button {
+.playlist-card .playlist-thumbnail .play-button {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.playlists-container .playlist-card .playlist-thumbnail .play-button img {
+.playlist-card .playlist-thumbnail .play-button img {
   height: 24px;
 }
 
-.playlists-container .playlist-card .playlist-thumbnail .playlist-more-button:hover {
+.playlist-card .playlist-thumbnail .playlist-more-button:hover {
   background-color: rgba(255, 255, 255, 0.3);
   transition: all 0.15s;
 }
 
-.playlists-container .playlist-card .playlist-thumbnail .playlist-thumbnail-overlay {
+.playlist-card .playlist-thumbnail .playlist-thumbnail-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
@@ -170,7 +170,7 @@ main .from-library-section .section-heading .heading-actions .more-button:active
   pointer-events: none;
 }
 
-.playlists-container .playlist-card .playlist-thumbnail .playlist-more-button {
+.playlist-card .playlist-thumbnail .playlist-more-button {
   position: absolute;
   top: 10px;
   right: 4px;
@@ -178,7 +178,7 @@ main .from-library-section .section-heading .heading-actions .more-button:active
   transition: all 0.15s ease-in;
 }
 
-.playlists-container .playlist-card .playlist-thumbnail .play-button {
+.playlist-card .playlist-thumbnail .play-button {
   position: absolute;
   bottom: 10px;
   right: 12px;
@@ -187,14 +187,14 @@ main .from-library-section .section-heading .heading-actions .more-button:active
 }
 
 
-.playlists-container .playlist-card .playlist-thumbnail:hover .playlist-thumbnail-overlay,
-.playlists-container .playlist-card .playlist-thumbnail:hover .playlist-more-button,
-.playlists-container .playlist-card .playlist-thumbnail:hover .play-button {
+.playlist-card .playlist-thumbnail:hover .playlist-thumbnail-overlay,
+.playlist-card .playlist-thumbnail:hover .playlist-more-button,
+.playlist-card .playlist-thumbnail:hover .play-button {
   opacity: 1;
   transition: all 0.15s ease-out;
 }
 
-.playlists-container .playlist-card .playlist-thumbnail .play-button:hover {
+.playlist-card .playlist-thumbnail .play-button:hover {
   transform: scale(1.25);
   background-color: rgba(0, 0, 0, 0.9);
   transition: all 0.15 ease-out;

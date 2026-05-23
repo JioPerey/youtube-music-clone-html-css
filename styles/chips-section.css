@@ -1,27 +1,29 @@
-main .chips-section {
+.chips-section {
   display: flex;
   gap: 12px;
   margin-bottom: 46px;
 }
 
-main .chips-section .chip {
+.chips-section .chip {
   background-color: rgba(255, 255, 255, 0.1);
   font-size: 14px;
   padding: 10px 12px;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.15s;
+  display: flex;
+  align-items: center;
 }
 
-main .chips-section .chip p {
+.chips-section .chip p {
   white-space: nowrap;
 }
 
-main .chips-section .chip:hover {
+.chips-section .chip:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-main .chips-section .chip:active {
+.chips-section .chip:active {
   background-color: white;
   color: black;
 }
