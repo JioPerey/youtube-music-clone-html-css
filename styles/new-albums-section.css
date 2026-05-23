@@ -1,8 +1,7 @@
-main .new-albums-section {
+.new-albums-section {
   margin-bottom: 46px;
 }
 
-main .new-albums-section
 .section-heading {
   display: flex;
   justify-content: space-between;
@@ -10,26 +9,22 @@ main .new-albums-section
   margin-bottom: 16px;
 }
 
-main .new-albums-section
-.section-heading .heading-title {
+.heading-title {
   flex: 1;
 }
 
-main .new-albums-section
-.section-heading .heading-title a{
+.heading-title a {
   color: inherit;
   text-decoration: none;
   transition: text-decoration 0.15s ease-in;
 }
 
-main .new-albums-section
-.section-heading .heading-title a:hover {
+.heading-title a:hover {
   text-decoration: underline;
   transition: text-decoration 0.15s ease-out;
 }
 
-main .new-albums-section
-.section-heading .heading-actions {
+.heading-actions {
   max-width: 190px;
   display: flex;
   justify-content: end;
@@ -38,9 +33,7 @@ main .new-albums-section
   flex-shrink: 0;
 }
 
-main .new-albums-section
-.section-heading .heading-actions
-button {
+.heading-actions button {
   font-family: inherit;
   font-size: 14px;
   background-color: transparent;
@@ -52,45 +45,32 @@ button {
   transition: all 0.15s;
 }
 
-main .new-albums-section
-.section-heading .heading-actions
-button:hover {
+.heading-actions button:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-main .new-albums-section
-.section-heading .heading-actions
-button:active {
+.heading-actions button:active {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-main .new-albums-section
-.section-heading .heading-actions
-button img {
+.heading-actions button img {
   vertical-align: middle;
 }
 
-main .new-albums-section
-.section-heading .heading-actions
 .new-albums-more-btn {
-  padding: 8px 16px;
+  padding: 8px 16px !important;
   transition: all 0.15s;
 }
 
-main .new-albums-section
-.section-heading .heading-actions
 .new-albums-more-btn:hover {
   border: 1px solid transparent;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-main .new-albums-section
-.section-heading .heading-actions
 .new-albums-more-btn:active {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
-main .new-albums-section
 .new-albums-grid {
   display: grid;
   grid-template-rows: 1fr;
@@ -99,45 +79,33 @@ main .new-albums-section
   column-gap: 24px;
   overflow-x: auto;
   overscroll-behavior-x: contain;
+  scrollbar-width: none;
 }
 
-main .new-albums-section
 .new-albums-grid::-webkit-scrollbar {
   display: none;
 }
 
-main .new-albums-section
-.new-albums-grid {
-  scrollbar-width: none;
-}
-
-main .new-albums-section
-.new-albums-grid .new-album-preview {
+.new-album-preview {
   width: 100%;
 }
 
-main .new-albums-section
-.new-albums-grid .new-album-preview
 .new-album-thumbnail {
- width: 100%;
- position: relative;
+  width: 100%;
+  position: relative;
 }
 
-main .new-albums-section
-.new-albums-grid .new-album-preview
 .new-album-thumbnail img {
- width: 100%;
- height: auto;
- aspect-ratio: 1 / 1;
- object-fit: cover;
- object-position: center;
- display: block;
- border-radius: 8px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 8px;
 }
 
-main .new-albums-section
-.new-albums-grid .new-album-preview
-.new-album-thumbnail .new-album-thumbnail-overlay {
+.new-album-thumbnail-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
@@ -151,12 +119,15 @@ main .new-albums-section
   pointer-events: none;
 }
 
-main .new-albums-section
-.new-albums-grid .new-album-preview
+.new-album-thumbnail:hover .new-album-thumbnail-overlay,
+.new-album-thumbnail:hover .new-album-more-vert-btn,
+.new-album-thumbnail:hover .play-button {
+  opacity: 1;
+  transition: all 0.15s ease-out;
+}
+
 .play-button,
-main .new-albums-section
-.new-albums-grid .new-album-preview
-.new-album-thumbnail .new-album-more-vert-btn {
+.new-album-more-vert-btn {
   background-color: transparent;
   border: none;
   padding: 6px;
@@ -165,38 +136,31 @@ main .new-albums-section
   transition: all 0.15s;
 }
 
-main .new-albums-section
-.new-albums-grid .new-album-preview
 .play-button img,
-main .new-albums-section
-.new-albums-grid .new-album-preview
-.new-album-thumbnail .new-album-more-vert-btn img {
+.new-album-more-vert-btn img {
   vertical-align: middle;
 }
 
-main .new-albums-section
-.new-albums-grid .new-album-preview
 .new-album-thumbnail .play-button {
+  position: absolute;
+  bottom: 10px;
+  right: 12px;
   background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: all 0.15s ease-in;
 }
 
-main .new-albums-section
-.new-albums-grid .new-album-preview
-.new-album-thumbnail .play-button img{
+.new-album-thumbnail .play-button img {
   height: 30px;
 }
 
-main .new-albums-section
-.new-albums-grid .new-album-preview
-.new-album-thumbnail .new-album-more-vert-btn:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  transition: all 0.15s;
+.new-album-thumbnail .play-button:hover {
+  transform: scale(1.15);
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: all 0.15s ease-out; 
 }
 
-
-main .new-albums-section
-.new-albums-grid .new-album-preview
-.new-album-thumbnail .new-album-more-vert-btn {
+.new-album-more-vert-btn {
   position: absolute;
   top: 10px;
   right: 4px;
@@ -204,46 +168,16 @@ main .new-albums-section
   transition: all 0.15s ease-in;
 }
 
-main .new-albums-section
-.new-albums-grid .new-album-preview
-.new-album-thumbnail .play-button {
-  position: absolute;
-  bottom: 10px;
-  right: 12px;
-  opacity: 0;
-  transition: all 0.15s ease-in;
+.new-album-more-vert-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.15s;
 }
 
-main .new-albums-section
-.new-albums-grid .new-album-preview
-.new-album-thumbnail:hover .new-album-thumbnail-overlay,
-main .new-albums-section
-.new-albums-grid .new-album-preview
-.new-album-thumbnail:hover .new-album-more-vert-btn,
-main .new-albums-section
-.new-albums-grid .new-album-preview
-.new-album-thumbnail:hover .play-button {
-  opacity: 1;
-  transition: all 0.15s ease-out;
-}
-
-main .new-albums-section
-.new-albums-grid .new-album-preview
-.new-album-thumbnail .play-button:hover {
-  transform: scale(1.15);
-  background-color: rgba(0, 0, 0, 0.9);
-  transition: all 0.15 ease-out;
-}
-
-main .new-albums-section
-.new-albums-grid .new-album-preview
 .new-album-info {
   padding: 12px 2px;
 }
 
-main .new-albums-section
-.new-albums-grid .new-album-preview
-.new-album-info .album-title {
+.album-title {
   text-decoration: none;
   color: inherit;
   font-weight: 500;
@@ -253,29 +187,43 @@ main .new-albums-section
   transition: all 0.15s;
 }
 
-main .new-albums-section
-.new-albums-grid .new-album-preview
-.new-album-info .album-title:hover {
+.album-title:hover {
   text-decoration: underline;
 }
 
-main .new-albums-section
-.new-albums-grid .new-album-preview
-.new-album-info .album-author {
+.album-author {
   color: rgba(255, 255, 255, 0.7);
 }
 
-main .new-albums-section
-.new-albums-grid .new-album-preview
-.new-album-info .album-author a {
+.album-author a {
   text-decoration: none;
   color: inherit;
   font-size: inherit;
   transition: all 0.15s;
 }
 
-main .new-albums-section
-.new-albums-grid .new-album-preview
-.new-album-info .album-author a:hover {
-text-decoration: underline;
+.album-author a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 1400px) {
+  .new-albums-grid {
+    grid-auto-columns: 15%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .album-title {
+    font-size: 15px;  
+  }
+
+  .album-author {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .new-albums-grid {
+    grid-auto-columns: 40%;
+  }
 }

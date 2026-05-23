@@ -193,3 +193,22 @@ main .music-videos-section .music-videos-grid .music-video-preview .music-video-
   color: rgba(255, 255, 255, 0.7);
 } 
 
+@media (min-width: 1400px) {
+  main .music-videos-section .music-videos-grid {
+    grid-auto-columns: 28.57%;
+  }
+}
+
+@media (max-width: 576px) {
+  main .music-videos-section .music-videos-grid .music-video-preview .music-video-info .music-video-title {
+    font-size: 15px;
+  }
+
+  main .music-videos-section .music-videos-grid .music-video-preview .music-video-info .music-video-stats {
+    font-size: 14px;
+  }
+
+  main .music-videos-section .music-videos-grid {
+    grid-auto-columns: 70%;
+  }
+}

@@ -39,3 +39,9 @@ nav .nav-link p {
   font-size: 10px;
   font-weight: 500;
 }
+
+@media (max-width: 615px) {
+  nav {
+    display: none;
+  }
+}

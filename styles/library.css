@@ -11,6 +11,12 @@ header {
   padding-right: 108px;
 }
 
+@media (max-width: 935px) {
+  header {
+    padding-right: 16px;
+  }
+}
+
 body {
   padding-top: 94px;
 }
@@ -43,5 +49,41 @@ main .chips-section .chip {
 
 .playlist-card .playlist-info {
   padding: 12px 0;
+}
+
+@media (min-width: 1400px) {
+  .library-grid {
+    grid-template-columns: repeat(9, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  .library-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 1150px) {
+  .library-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 756px) {
+  .library-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 615px) {
+  .library-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .library-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 

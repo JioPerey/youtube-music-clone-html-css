@@ -2,6 +2,16 @@
   display: flex;
   gap: 12px;
   margin-bottom: 46px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+}
+
+.chips-section::-webkit-scrollbar {
+  display: none;
+}
+
+.chips-section {
+  scrollbar-width: none;
 }
 
 .chips-section .chip {

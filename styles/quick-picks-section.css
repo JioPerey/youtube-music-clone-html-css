@@ -109,7 +109,6 @@ main .quick-picks-section .section-heading .right-section button:active {
 }
 
 .video-cards-container .video-card {
-  max-width: 374px;
   display: flex;
   align-items: center;
   gap: 16px;
@@ -146,8 +145,8 @@ main .quick-picks-section .section-heading .right-section button:active {
 }
 
 .video-cards-container .video-card .video-image .video-image-overlay img {
-  width: 34px;
-  height: 34px;
+  width: 24px;
+  height: 24px;
 }
 
 .video-cards-container .video-card .video-details {
@@ -229,4 +228,34 @@ main .quick-picks-section .section-heading .right-section button:active {
 
 .video-cards-container .video-card:hover .video-image .video-image-overlay {
   opacity: 1;
+}
+
+@media (min-width: 1400px) {
+  .video-cards-container {
+    grid-auto-columns: 33.33%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .video-stats a{
+    font-size: 14px;
+  }
+
+  .video-title {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .video-stats a{
+    font-size: 14px;
+  }
+
+  .video-title {
+    font-size: 15px;
+  }
+
+  .video-cards-container {
+    grid-auto-columns: 90%;
+  }
 }

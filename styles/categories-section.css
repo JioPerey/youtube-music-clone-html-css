@@ -49,6 +49,10 @@ main .categories-section
     padding: 95px 48px 48px 112px;
   }
 
+  h2 {
+    font-size: 20px;
+  }
+
   main .categories-section {
     grid-template-columns: 1fr;
     row-gap: 16px;

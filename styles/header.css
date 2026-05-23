@@ -37,7 +37,6 @@ header .left-section .hamburger-menu-container .hamburger-menu {
   vertical-align: middle;
 }
 
-
 header .left-section .youtube-music-logo {
   height: 24px;
   cursor: pointer;
@@ -55,6 +54,7 @@ header .left-section .youtube-music-logo {
   height: 42px;
   width: 100%;
   box-sizing: border-box;
+  margin-right: 24px;
 }
 
 .left-section .search-container .search-icon {
@@ -78,7 +78,6 @@ header .left-section .youtube-music-logo {
 
 .left-section .search-container:focus-within {
   background-color: #030303;
-
 }
 
 .left-section .search-container .search-input::placeholder {
@@ -93,8 +92,14 @@ header .right-section {
   gap: 24px;
 }
 
-header .right-section .cast-button {
-  margin-left: 16px;
+header .right-section .mobile-search-button {
+  display: none; 
+}
+
+header .right-section .mobile-search-button .search-icon {
+  vertical-align: top;
+  height: 26px;
+  cursor: pointer;
 }
 
 header .right-section .cast-button .cast-icon {
@@ -116,4 +121,18 @@ header .right-section .current-user-profile-container img {
   object-position: center;
   display: block;
   border-radius: 16px;
+}
+
+@media (max-width: 935px) {
+  .left-section .search-container {
+    display: none;
+  }
+
+  header .right-section .mobile-search-button {
+    display: block;
+  }
+  
+  header {
+    padding: 0 16px; 
+  }
 }
