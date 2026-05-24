@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Explore | YouTube Music Clone  </title>
-    <link rel="icon"  href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -16,9 +16,14 @@
     <script defer src="scripts/script.js"></script>
   </head>
   <body>
-    <header>
+    <script>
+      if (localStorage.getItem('sidebarState') === 'expanded') {
+        document.body.classList.add('sidebar-expanded');
+      }
+    </script>
+    <header>  
       <section class="left-section">
-        <div class="hamburger-menu-container">
+        <div class="hamburger-menu-container" onclick="toggleSidebar()">
           <img class="hamburger-menu" src="icons/hambuger-menu-icon.svg" alt="hamburger menu">
         </div>
         <a href="index.html">
@@ -30,6 +35,9 @@
         </div>
       </section>
       <section class="right-section">
+        <div class="mobile-search-button">
+          <img class="search-icon" src="icons/search-icon.svg" alt="search icon">
+        </div>
         <div class="cast-button">
           <img class="cast-icon" src="icons/cast-icon.svg" alt="cast icon">
         </div>
@@ -39,8 +47,8 @@
       </section>
     </header>
     
-    <nav>
-      <a href="index.html" class="nav-link " >
+    <nav id="navSidebar">
+      <a href="index.html" class="nav-link" >
         <img src="icons/home-icon.svg" alt="home icon">
         <p>Home</p>
       </a>
@@ -56,6 +64,130 @@
         <img class="youtube-music-icon" src="icons/youtube-music.svg" alt="youtube music icon">
         <p>Upgrade</p>
       </a>
+
+      <div class="expanded-sidebar">
+        <div class="hr"></div>
+        <button class="create-playlist-button">
+          <img src="icons/plus-icon.svg" alt="plus icon">
+          New playlist
+        </button>
+        <div class="nav-playlist-container">
+          <div class="nav-playlist-card">
+            <p class="playlist-title">Liked Music</p>
+            <p class="current-username">Auto playlist</p>
+            <button class="nav-playlist-play-btn">
+              <img src="icons/play-icon-black.svg" alt="play icon">
+            </button>
+          </div>  
+          <div class="nav-playlist-card">
+            <p class="playlist-title">...</p>
+            <p class="current-username">Jio Perey</p>
+            <button class="nav-playlist-play-btn">
+              <img src="icons/play-icon-black.svg" alt="play icon">
+            </button>
+          </div>  
+          <div class="nav-playlist-card">
+            <p class="playlist-title">
+              Old Discovers
+            </p>
+            <p class="current-username">
+              Jio Perey
+            </p>
+            <button class="nav-playlist-play-btn">
+              <img src="icons/play-icon-black.svg" alt="play icon">
+            </button>
+          </div>  
+          <div class="nav-playlist-card">
+            <p class="playlist-title">
+              Classic OPM
+            </p>
+            <p class="current-username">
+              Jio Perey
+            </p>
+            <button class="nav-playlist-play-btn">
+              <img src="icons/play-icon-black.svg" alt="play icon">
+            </button>
+          </div>  
+          <div class="nav-playlist-card">
+            <p class="playlist-title">
+              Modern OPM
+            </p>
+            <p class="current-username">
+              Jio Perey
+            </p>
+            <button class="nav-playlist-play-btn">
+              <img src="icons/play-icon-black.svg" alt="play icon">
+            </button>
+          </div>  
+          <div class="nav-playlist-card">
+            <div class="playlist-details"></div>
+            <p class="playlist-title">
+              Can't think of a playlist title 2
+            </p>
+            <p class="current-username">
+              Jio Perey
+            </p>
+            <button class="nav-playlist-play-btn">
+              <img src="icons/play-icon-black.svg" alt="play icon">
+            </button>
+          </div> 
+          <div class="nav-playlist-card">
+            <p class="playlist-title">
+              Oldies but Goodies
+            </p>
+            <p class="current-username">
+              Jio Perey
+            </p>
+            <button class="nav-playlist-play-btn">
+              <img src="icons/play-icon-black.svg" alt="play icon">
+            </button>
+          </div>  
+          <div class="nav-playlist-card">
+            <p class="playlist-title">
+              Feels like old
+            </p>
+            <p class="current-username">
+              Jio Perey
+            </p>
+            <button class="nav-playlist-play-btn">
+              <img src="icons/play-icon-black.svg" alt="play icon">
+            </button>
+          </div>  
+          <div class="nav-playlist-card">
+            <p class="playlist-title">
+              Can't think of a playlist title
+            </p>
+            <p class="current-username">
+              Jio Perey
+            </p>
+            <button class="nav-playlist-play-btn">
+              <img src="icons/play-icon-black.svg" alt="play icon">
+            </button>
+          </div>  
+          <div class="nav-playlist-card">
+            <p class="playlist-title">
+              Peace
+            </p>
+            <p class="current-username">
+              Jio Perey
+            </p>
+            <button class="nav-playlist-play-btn">
+              <img src="icons/play-icon-black.svg" alt="play icon">
+            </button>
+          </div>  
+          <div class="nav-playlist-card">
+            <p class="playlist-title">
+              Episodes for Later
+            </p>
+            <p class="current-username">
+              Auto playlist
+            </p>
+            <button class="nav-playlist-play-btn">
+              <img src="icons/play-icon-black.svg" alt="play icon">
+            </button>
+          </div>  
+        </div>
+      </div>
     </nav>
     
     <main>

@@ -26,9 +26,9 @@
 }
 
 .heading-actions {
-  width: 190px;
+  max-width: 190px;
   display: flex;
-  flex-shrink: 0;
+  flex-shrink: 1;
   gap: 16px;
   justify-content: end;
 }
@@ -212,5 +212,9 @@
 @media (max-width: 576px) {
   .playlists-container {
     grid-auto-columns: 40%;
+  }
+
+  .heading-actions {
+    gap: 8px;
   }
 }

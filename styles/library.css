@@ -51,7 +51,7 @@ main .chips-section .chip {
   padding: 12px 0;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1500px) {
   .library-grid {
     grid-template-columns: repeat(9, 1fr);
   }

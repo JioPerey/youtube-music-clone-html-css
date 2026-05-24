@@ -58,3 +58,16 @@ initCarousel('.playlists-container', '.library-previous-button', '.library-next-
 initCarousel('.music-videos-grid', '.music-videos-prev-btn', '.music-videos-next-btn', 346);
 initCarousel('.new-albums-grid', '.new-albums-prev-btn', '.new-albums-next-btn', 205 * 2)
 initCarousel('.moods-grid', '.moods-prev-btn', '.moods-next-btn', 260 * 2)
+
+
+function toggleSidebar() {
+  document.body.classList.toggle('sidebar-expanded');
+  
+  const isNowExpanded = document.body.classList.contains('sidebar-expanded');
+  
+  if (isNowExpanded) {
+    localStorage.setItem('sidebarState', 'expanded');
+  } else {
+    localStorage.setItem('sidebarState', 'collapsed');
+  }
+}

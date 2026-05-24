@@ -38,7 +38,7 @@ main .quick-picks-section .section-heading .left-section .heading-title:hover {
 }
 
 main .quick-picks-section .section-heading .right-section {
-  width: 180px;
+  max-width: 180px;
   display: flex;
   align-items: center;
   gap: 16px;
@@ -257,5 +257,9 @@ main .quick-picks-section .section-heading .right-section button:active {
 
   .video-cards-container {
     grid-auto-columns: 90%;
+  }
+
+  main .quick-picks-section .section-heading .right-section {
+    gap: 8px;
   }
 }

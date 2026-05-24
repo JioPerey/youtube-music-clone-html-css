@@ -30,7 +30,6 @@
   justify-content: end;
   align-items: center;
   gap: 16px;
-  flex-shrink: 0;
 }
 
 .heading-actions button {
@@ -225,5 +224,9 @@
 @media (max-width: 576px) {
   .new-albums-grid {
     grid-auto-columns: 40%;
+  }
+
+  .heading-actions {
+    gap: 8px;
   }
 }
