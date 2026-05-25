@@ -7,10 +7,6 @@ header .right-section .history-link .history-icon {
   cursor: pointer;
 }
 
-header {
-  padding-right: 108px;
-}
-
 @media (max-width: 935px) {
   header {
     padding-right: 16px;

@@ -31,14 +31,29 @@
   flex-shrink: 1;
   gap: 16px;
   justify-content: end;
+  align-items: center;
+}
+
+.heading-actions .more-button {
+  font-family: Roboto, Arial, sans-serif;
+  padding: 8px 16px;
+}
+
+.heading-actions .more-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid transparent;
+}
+
+.heading-actions .more-button:active {
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .heading-actions button {
   background-color: transparent;
   color: white;
+  padding: 6px;
   font-size: 14px;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 6px;
   border-radius: 100px;
   cursor: pointer;
 }
@@ -52,22 +67,10 @@
 }
 
 .heading-actions button img {
-  vertical-align: middle;
+  vertical-align: top;
 }
 
-.more-button {
-  font-family: Roboto, Arial, sans-serif;
-  padding: 8px 16px !important;
-}
 
-.more-button:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid transparent;
-}
-
-.more-button:active {
-  background-color: rgba(255, 255, 255, 0.4);
-}
 
 .playlists-container {
   display: grid;
@@ -216,5 +219,14 @@
 
   .heading-actions {
     gap: 8px;
+  }
+
+  .heading-actions .more-button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .heading-actions button img{
+    width: 16px;
   }
 }

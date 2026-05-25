@@ -29,17 +29,23 @@ body {
 }
 
 @media (max-width: 1400px) {
-   h1 { font-size: 24px; 
+   h1 { font-size: 28px; 
   }
 
-   h2 { font-size: 20px; 
+  h2 { 
+    font-size: 20px; 
   }
 }
 
 @media (max-width: 1200px) {
   h1 { 
-    font-size: 28px; 
+    font-size: 24px; 
   }
+
+  h2 { 
+    font-size: 18px; 
+  }
+
 }
 
 @media (max-width: 936px) {
@@ -50,6 +56,14 @@ body {
 }
 
 @media (max-width: 615px) {
+  h1 { 
+    font-size: 22px; 
+  }
+
+  h2 { 
+    font-size: 16px; 
+  }
+
   body {
     padding-top: 110px;
     padding-right: 16px;

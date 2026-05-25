@@ -215,4 +215,13 @@ main .music-videos-section .music-videos-grid .music-video-preview .music-video-
   main .music-videos-section .section-heading .heading-actions {
     gap: 8px;
   }
+
+  main .music-videos-section .section-heading .heading-actions .play-all-button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  main .music-videos-section .section-heading .heading-actions button img {
+    width: 16px;
+  }
 }

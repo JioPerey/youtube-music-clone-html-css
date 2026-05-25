@@ -59,7 +59,6 @@ initCarousel('.music-videos-grid', '.music-videos-prev-btn', '.music-videos-next
 initCarousel('.new-albums-grid', '.new-albums-prev-btn', '.new-albums-next-btn', 205 * 2)
 initCarousel('.moods-grid', '.moods-prev-btn', '.moods-next-btn', 260 * 2)
 
-
 function toggleSidebar() {
   document.body.classList.toggle('sidebar-expanded');
   
@@ -71,3 +70,36 @@ function toggleSidebar() {
     localStorage.setItem('sidebarState', 'collapsed');
   }
 }
+
+function isMobile() {
+  return window.innerWidth <= 768;
+}
+
+function setupSidebarAutoCollapse() {
+  const navLinks = document.querySelectorAll('.nav-link');
+  
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (isMobile() && document.body.classList.contains('sidebar-expanded')) {
+        document.body.classList.remove('sidebar-expanded');
+        localStorage.setItem('sidebarState', 'collapsed');
+      }
+    });
+  });
+}
+
+function setupMobileOverlay() {
+  const overlay = document.createElement('div');
+  overlay.className = 'sidebar-overlay';
+  document.body.appendChild(overlay);
+  
+  overlay.addEventListener('click', () => {
+    document.body.classList.remove('sidebar-expanded');
+    localStorage.setItem('sidebarState', 'collapsed');
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  setupSidebarAutoCollapse();
+  setupMobileOverlay();
+});

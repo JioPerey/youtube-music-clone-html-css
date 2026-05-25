@@ -262,4 +262,13 @@ main .quick-picks-section .section-heading .right-section button:active {
   main .quick-picks-section .section-heading .right-section {
     gap: 8px;
   }
+
+  main .quick-picks-section .section-heading .right-section .play-all-button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  main .quick-picks-section .section-heading .right-section button img {
+    width: 16px;
+  }
 }

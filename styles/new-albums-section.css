@@ -34,7 +34,6 @@
 
 .heading-actions button {
   font-family: inherit;
-  font-size: 14px;
   background-color: transparent;
   color: white;
   padding: 6px;
@@ -56,17 +55,18 @@
   vertical-align: middle;
 }
 
-.new-albums-more-btn {
-  padding: 8px 16px !important;
+.heading-actions  .new-albums-more-btn {
+  font-size: 14px;
+  padding: 8px 16px;
   transition: all 0.15s;
 }
 
-.new-albums-more-btn:hover {
+.heading-actions  .new-albums-more-btn:hover {
   border: 1px solid transparent;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.new-albums-more-btn:active {
+.heading-actions  .new-albums-more-btn:active {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
@@ -228,5 +228,15 @@
 
   .heading-actions {
     gap: 8px;
+  }
+
+  .new-albums-more-btn {
+    padding: 6px 12px !important;
+    font-size: 12px;
+  }
+
+  .heading-actions button img {
+    width: 16px;
+    vertical-align: top;
   }
 }
