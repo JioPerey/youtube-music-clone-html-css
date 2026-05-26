@@ -250,6 +250,7 @@ main .quick-picks-section .section-heading .right-section button:active {
   }
 
   main .quick-picks-section .section-heading .right-section .play-all-button {
+    margin-left: 6px;
     padding: 4px 8px;
     font-size: 12px;
   }

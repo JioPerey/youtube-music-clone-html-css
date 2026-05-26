@@ -121,6 +121,7 @@
 
   .moods-section .section-heading
   .heading-actions .moods-more-btn {
+    margin-left: 6px;
     padding: 4px 8px;
     font-size: 12px;
   }

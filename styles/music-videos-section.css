@@ -216,6 +216,7 @@ main .music-videos-section .music-videos-grid .music-video-preview .music-video-
   }
 
   main .music-videos-section .section-heading .heading-actions .play-all-button {
+    margin-left: 6px;
     padding: 4px 8px;
     font-size: 12px;
   }
