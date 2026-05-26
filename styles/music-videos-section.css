@@ -1,26 +1,25 @@
 main .music-videos-section .section-heading {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
   margin-bottom: 16px;
 }
 
 main .music-videos-section .section-heading .heading-title {
   flex: 1;
-  white-space: nowrap;
 }
 
 main .music-videos-section .section-heading .heading-actions {
   max-width: 190px;
   display: flex;
   justify-content: end;
-  align-items: center;
   gap: 16px;
   flex-shrink: 1;
 }
 
 main .music-videos-section .section-heading .heading-actions button {
   background-color: transparent;
+  white-space: nowrap;
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 14px;
@@ -213,15 +212,20 @@ main .music-videos-section .music-videos-grid .music-video-preview .music-video-
   }
 
   main .music-videos-section .section-heading .heading-actions {
-    gap: 8px;
+    gap: 6px;
   }
 
   main .music-videos-section .section-heading .heading-actions .play-all-button {
-    padding: 6px 12px;
+    padding: 4px 8px;
     font-size: 12px;
+  }
+
+  main .music-videos-section .section-heading .heading-actions button{
+    padding: 4px;
   }
 
   main .music-videos-section .section-heading .heading-actions button img {
     width: 16px;
+    vertical-align: top;
   }
 }

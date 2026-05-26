@@ -5,7 +5,7 @@
 .section-heading {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
   margin-bottom: 16px;
 }
 
@@ -36,6 +36,7 @@
   font-family: inherit;
   background-color: transparent;
   color: white;
+  white-space: nowrap;
   padding: 6px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 100px;
@@ -55,7 +56,7 @@
   vertical-align: middle;
 }
 
-.heading-actions  .new-albums-more-btn {
+.heading-actions .new-albums-more-btn {
   font-size: 14px;
   padding: 8px 16px;
   transition: all 0.15s;
@@ -227,12 +228,16 @@
   }
 
   .heading-actions {
-    gap: 8px;
+    gap: 6px;
   }
 
-  .new-albums-more-btn {
-    padding: 6px 12px !important;
+  .heading-actions .new-albums-more-btn {
+    padding: 4px 8px;
     font-size: 12px;
+  }
+
+  .heading-actions button {
+    padding: 4px;
   }
 
   .heading-actions button img {

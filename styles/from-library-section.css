@@ -4,14 +4,13 @@
 
 .section-heading {
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: space-between;
   margin-bottom: 16px;
 }
 
 .heading-title {
   flex: 1;
-  white-space: nowrap;
   cursor: pointer;
   transition: all 0.15s;
 }
@@ -218,12 +217,16 @@
   }
 
   .heading-actions {
-    gap: 8px;
+    gap: 6px;
   }
 
   .heading-actions .more-button {
-    padding: 6px 12px;
+    padding: 4px 8px;
     font-size: 12px;
+  }
+
+  .heading-actions button {
+    padding: 4px;
   }
 
   .heading-actions button img{

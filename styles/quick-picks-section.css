@@ -5,32 +5,17 @@ main .quick-picks-section {
 main .quick-picks-section .section-heading {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
 }
 
 main .quick-picks-section .section-heading .left-section {
-  display: flex;
   flex: 1;
-  align-items: center;
-  gap: 16px;
-}
-
-main .quick-picks-section .section-heading .left-section .current-user-profile-container {
-  width: 56px;
-}
-
-main .quick-picks-section .section-heading .left-section .current-user-profile-container img {
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  border-radius: 28px;
 }
 
 main .quick-picks-section .section-heading .left-section .heading-title {
   cursor: pointer;
   transition: all 0.15s;
-  white-space: nowrap;
+  white-space: wrap;
 }
 
 main .quick-picks-section .section-heading .left-section .heading-title:hover {
@@ -73,6 +58,7 @@ main .quick-picks-section .section-heading .right-section button img {
 
 main .quick-picks-section .section-heading .right-section button {
   background-color: transparent;
+  white-space: nowrap;
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 6px;
   border-radius: 100px;
@@ -260,12 +246,16 @@ main .quick-picks-section .section-heading .right-section button:active {
   }
 
   main .quick-picks-section .section-heading .right-section {
-    gap: 8px;
+    gap: 6px;
   }
 
   main .quick-picks-section .section-heading .right-section .play-all-button {
-    padding: 6px 12px;
+    padding: 4px 8px;
     font-size: 12px;
+  }
+
+  main .quick-picks-section .section-heading .right-section button {
+    padding: 4px;
   }
 
   main .quick-picks-section .section-heading .right-section button img {

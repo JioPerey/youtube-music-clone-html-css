@@ -5,7 +5,7 @@
 .moods-section .section-heading {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
   margin-bottom: 16px;
 }
 
@@ -38,6 +38,7 @@
 .moods-section .section-heading
 .heading-actions button {
   font-family: inherit;
+  white-space: nowrap;
   background-color: transparent;
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -115,13 +116,18 @@
 
   .moods-section .section-heading
   .heading-actions {
-    column-gap: 8px;
+    column-gap: 6px;
   }
 
   .moods-section .section-heading
   .heading-actions .moods-more-btn {
-    padding: 6px 12px;
+    padding: 4px 8px;
     font-size: 12px;
+  }
+
+  .moods-section .section-heading
+  .heading-actions button {
+    padding: 4px;
   }
 
   .moods-section .section-heading
